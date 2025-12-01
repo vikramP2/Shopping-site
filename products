@@ -1,0 +1,38 @@
+// Sample products
+
+const PRODUCTS = [
+{ id: 'p1', title: 'Classic T-Shirt', price: 499, category: 'Clothing', image: 'https://picsum.photos/seed/p1/400/300' },
+{ id: 'p2', title: 'Running Shoes', price: 2499, category: 'Footwear', image: 'https://picsum.photos/seed/p2/400/300' },
+{ id: 'p3', title: 'Leather Wallet', price: 799, category: 'Accessories', image: 'https://picsum.photos/seed/p3/400/300' },
+{ id: 'p4', title: 'Jeans Slim Fit', price: 1299, category: 'Clothing', image: 'https://picsum.photos/seed/p4/400/300' },
+{ id: 'p5', title: 'Sunglasses', price: 699, category: 'Accessories', image: 'https://picsum.photos/seed/p5/400/300' },
+{ id: 'p6', title: 'Backpack', price: 1599, category: 'Bags', image: 'https://picsum.photos/seed/p6/400/300' },
+{ id: 'p7', title: 'Sports Cap', price: 249, category: 'Accessories', image: 'https://picsum.photos/seed/p7/400/300' },
+{ id: 'p8', title: 'Formal Shoes', price: 2999, category: 'Footwear', image: 'https://picsum.photos/seed/p8/400/300' }
+];
+
+
+// State
+let state = {
+products: PRODUCTS,
+cart: loadCart()
+};
+
+
+// DOM refs
+const productsGrid = document.getElementById('productsGrid');
+const cartBtn = document.getElementById('cartBtn');
+const cartCount = document.getElementById('cartCount');
+const cartDrawer = document.getElementById('cartDrawer');
+const overlay = document.getElementById('overlay');
+const cartItemsEl = document.getElementById('cartItems');
+const cartSubtotal = document.getElementById('cartSubtotal');
+const closeCartBtn = document.getElementById('closeCartBtn');
+const clearCartBtn = document.getElementById('clearCartBtn');
+const searchInput = document.getElementById('searchInput');
+const categorySelect = document.getElementById('categorySelect');
+const checkoutBtn = document.getElementById('checkoutBtn');
+const checkoutModal = document.getElementById('checkoutModal');
+const cancelCheckoutBtn = document.getElementById('cancelCheckoutBtn');
+const confirmCheckoutBtn = document.getElementById('confirmCheckoutBtn');
+const checkoutSummary = document.getElementById('checkoutSummary');
